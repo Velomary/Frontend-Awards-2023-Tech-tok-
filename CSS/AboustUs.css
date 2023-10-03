@@ -1,0 +1,127 @@
+.txt{
+    color: var(--primary);
+    margin: 0 5%;
+    margin-top: 2%;
+    padding: 5%;
+}
+
+.mywork .cards{
+    display: flex;
+    flex-direction: row;  
+    flex-wrap: wrap; 
+    justify-content:center;
+}
+.cards .card{
+    width: 27%;
+    height: 40vw;
+    margin:0 3%;
+    margin-bottom: 4%;
+    padding: 2%;
+    color: var(--primary);
+    background-color: rgba(73, 73, 73, 0.2);
+    box-shadow: 0 30px 60px rgba(0,0,0,.5);
+    border-radius: 20px;
+    transform: translateY(-1000vw);
+} 
+.cards .card:hover{
+    transform: scale(1.05);
+    transition: all .5s;
+}
+.card h1{
+    font-weight: 600;
+    font-size: 2.2vw;
+    margin-bottom: 3px;
+}
+.card span{
+    margin-bottom: 25px;
+    font-size: 1vw;
+    color: rgb(175, 175, 175);
+}
+.card p{
+    margin-top: 1vw;
+    font-weight: 100;
+    font-size: 1.2vw;
+}
+.profiles{
+    display: flex;
+    align-items: center;
+    background-color: rgb(19, 17, 17);
+    height: 65%;
+    width: 100%;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-position: center;
+    background-size: cover;
+}
+.harena{
+    background-image: url(./assets/Harena.jpg);
+}
+.Velomary{
+    background-image: url(./assets/PXL_20230121_144705205~3.jpg); 
+}
+.bera{
+    background-image: url(./assets/bera.jpg); 
+
+}
+.profil{
+    margin-right: 10px;
+    margin-bottom: 3vh;
+}
+.abt{
+    margin-top: -50px;
+    margin-bottom: 70px;
+}
+.abt .abt-txt{
+    color: var(--primary);
+    padding: 0% 6%;
+    font-size: 1.8vw;
+    font-weight: 100;
+    line-height: 1.5;
+    margin: 20px 0;
+    transform: translateY(-1000vw);
+}
+.visible .abt-txt {
+    animation: titleanim .5s forwards;
+    animation-delay: .2s;
+}
+@media (max-width:992px){
+    .mywork .cards{
+        display: flex;
+        flex-direction: column;  
+        flex-wrap: wrap; 
+        justify-content:center;
+        align-items: center;
+    }
+}
+@media (max-width:600px) {
+    .mywork .cards{
+        display: flex;
+        flex-direction: column;  
+        flex-wrap: wrap; 
+        justify-content:center;
+        align-items: center;
+    }
+}
+@media (max-width:992px){
+    .mywork .cards{
+        display: flex;
+        flex-direction: column;  
+        flex-wrap: wrap; 
+    }
+    .cards .card{
+        width: 50%;
+        height: 80vw;
+        transform: translateY(-1000vw);
+    }
+    .card h1{
+        font-size: 4vw;
+    }
+    .card span{
+        font-size: 2vw;
+    }
+    .card p{
+        font-weight: 100;
+        font-size: 2.5vw;
+    }
+}

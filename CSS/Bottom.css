@@ -1,0 +1,158 @@
+.bottom{
+    width: 100%;
+    margin: auto;
+    margin-top: 150px;
+    padding: 10px;
+} 
+.containerBottom{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 3%;
+    margin: auto;
+}
+.titleBottom{
+    width: 45%;
+    margin: auto;
+    color: var(--primary);
+}
+.titleBottom h1{
+    font-family: tech;
+    font-size: 6vw;
+    font-weight: 100;
+    transform: translateY(-1000vw);
+}
+.titleBottom p{
+    font-size: 1.8vw;
+    line-height: 1.5;
+    transform: translateY(-1000vw);
+}
+.titleBottom p .mail{
+    font-weight: 200;
+}
+.titleBottom .first{
+    font-weight: 100;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.containerForm{
+    /* width: 40%; */
+    margin: auto;
+    /* margin-left: 25px;
+    padding-left: 32px;
+    padding-top: 20px;
+    padding-bottom: 35px; */
+    padding: 4% 4%;
+    display: flex;
+    justify-content: center;
+    border: 5px solid var(--violet);
+    border-radius: 30px;
+    box-shadow:0 30px 60px rgba(0,0,0,.5);
+    background: hsla(0, 0%, 49%, 0.027);
+    transform: translateY(-1000vw);
+}
+.formBottom input{
+    width: 46%;
+    /* margin: 2px; */
+    height: 60px;
+    /* border: 1px solid hsla(0, 0%, 100%, 0.301); */
+    border: none;
+    border-radius: 10px;
+    padding-left: 20px;
+    color: var(--primary);
+    margin-bottom: 20px;
+    margin-right: 1.2vw;
+    background: hsla(0, 16%, 39%, 0.274);
+    font-size: 1.5vw;
+    /* box-shadow:0 30px 60px rgba(0,0,0,.5); */
+}
+.formBottom textarea{
+    border: none;
+    width: 100%;
+    margin: 6% 0%;
+    height: 100px;
+    color: var(--primary);
+    border: none;
+    /* border: 1px solid hsla(0, 0%, 100%, 0.301); */
+    border-radius: 10px ;
+    resize: none;
+    /* margin-top: 5%; */
+    padding: 20px;
+    font-size: 1.2vw;
+    /* margin-bottom: 20px; */
+    background: hsla(0, 16%, 39%, 0.274);
+    /* box-shadow:0 30px 60px rgba(0,0,0,.5); */
+}
+.formBottom .bouton{
+    float: right;
+    margin-top: 5%;
+}
+
+.containerFooter{
+    width: 100%;
+    height: 15vw;
+    background-color: hsla(0, 4%, 24%, 0.274);
+    margin-top: 15%; 
+    margin-bottom: -10%;
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-1000vw);
+}
+.containerFooter .footer-text{
+    font-size: 1.5vw;
+    width: 100%;
+    font-weight: 100;
+    line-height: 1.5;
+    margin: 20px 0;
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 2vw;
+    transform: translateY(-1000vw);
+}
+.containerFooter .logo{
+    width: 70vw;
+    transform: translateY(-1000vw);
+}
+.containerFooter .logo ul{
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    /* background-color: red; */
+}
+.logo ul li{
+    width: 100%;
+    display: inline;
+    padding-right: 4%;
+    font-weight: bold;
+    color: var(--primary);
+    margin: 1%;
+    font-size: 2.3vw;
+    cursor: pointer;
+}
+.visible .titleBottom h1{
+    animation: panim-1 .5s forwards;
+}
+.visible .titleBottom p{
+    animation: panim-1 .5s forwards;
+    animation-delay: .4s;
+}
+.visible .containerForm{
+    animation: titleanim .5s forwards;
+    animation-delay: .8s;
+}
+.visible .containerFooter{
+    animation: titleanim .5s forwards;
+}
+.visible .containerFooter .footer-text{
+    animation: titleanim .5s forwards;
+    animation-delay: .5s;
+    
+}
+.visible .containerFooter .logo {
+    animation: panim .5s forwards;
+    animation-delay: .8s;
+
+}

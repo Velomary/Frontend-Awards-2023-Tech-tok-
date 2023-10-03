@@ -1,0 +1,101 @@
+.about{
+    display: flex;
+}
+.about .image{
+    width: 70vw;
+    height: 35vw;
+    /* padding: 5%; */
+    margin: 5%;
+    border-radius: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    background-position: center;
+    color: var(--primary);
+    background-repeat: no-repeat;
+}
+
+.about .image:hover{
+    background-size: 110%;
+    transition: all .5s;
+}
+.image p{
+    margin-top: -15vw;
+    border: 7px solid var(--violet);
+    padding: 10px 50px;
+    border-radius: 22px;
+    font-size: 3.5vw;
+    align-items: center;
+    transform: translateY(-1000vw);
+}
+
+.txt{
+    color: var(--primary);
+    margin-top: 2%;
+    padding: 5%;
+}
+.txt h1{
+    width: 42vw;
+    font-family: tech;
+    font-size: 5vw;
+    font-weight: 100;
+    transform: translateY(-1000vw);
+}
+.txt h1 span{
+    color: var(--violet);
+}
+
+.txt p{
+    font-size: 1.8vw;
+    font-weight: 100;
+    line-height: 1.5;
+    margin: 20px 0;
+    transform: translateY(-1000vw);
+}
+
+.txt .but{
+    /* margin: 20px ; */
+    margin-top: 4vw;
+    /* background-color: red; */
+    transform: translateY(-1000vw);
+    
+}
+.visible .image p {
+    animation: titleanim .8s forwards;
+}
+.visible .txt h1 {
+    animation: panim .5s forwards;
+    animation-delay: .5s;
+}
+.visible .txt p {
+    animation: panim .5s forwards;
+    animation-delay: .8s;
+}
+.visible .txt li {
+    animation: panim .5s forwards;
+    animation-delay: 1.2s;
+}
+.visible .txt .but {
+    animation: panim .5s forwards;
+    animation-delay: 1.3s;
+}
+.visible .work{
+    animation: panim-1 .5s forwards;
+}
+
+.visible .first{
+    animation: titleanim .5s forwards;
+}
+.visible .second{
+    animation: titleanim .5s forwards;
+    animation-delay: .3s;
+}
+.visible .third{
+    animation: titleanim .5s forwards;
+    animation-delay: .6s;
+}
+.visible .fourth{
+    animation: titleanim .5s forwards;
+    animation-delay: .9s;
+}
